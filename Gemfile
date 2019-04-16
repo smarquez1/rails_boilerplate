@@ -20,7 +20,6 @@ gem "webpacker", ">= 4.0.0.rc.3"
 # gem "pagy"
 
 group :development, :test do
-  # gem 'brakeman'
   # gem 'factory_bot_rails'
   gem "pry-byebug"
   gem "pry-rails"
@@ -28,6 +27,7 @@ group :development, :test do
 end
 
 group :development do
+  gem "brakeman", "~> 4.5", require: false
   gem "listen", ">= 3.0.5", "< 3.2"
   gem "rubocop", "~> 0.67.0", require: false
   gem "rubocop-performance", require: false
