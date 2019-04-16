@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
@@ -20,13 +22,12 @@ gem "webpacker", ">= 4.0.0.rc.3"
 group :development, :test do
   # gem 'brakeman'
   # gem 'factory_bot_rails'
-  # gem 'pry-byebug'
-  # gem 'pry-rails'
+  gem "pry-byebug"
+  gem "pry-rails"
   # gem 'rspec-rails', '~> 3.5'
 end
 
 group :development do
-  # gem 'bullet'
   gem "listen", ">= 3.0.5", "< 3.2"
   gem "rubocop", "~> 0.67.0", require: false
   gem "rubocop-performance", require: false
@@ -38,6 +39,7 @@ group :development do
 end
 
 group :test do
+  # gem "bullet", require: false
   # gem 'capybara'
   # gem 'chromedriver-helper' # Use webdriver gem
   # gem 'faker'
