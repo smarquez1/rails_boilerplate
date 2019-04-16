@@ -1,0 +1,38 @@
+inherit_from: .rubocop_todo.yml
+
+require:
+  - rubocop-rspec
+  - rubocop-performance
+
+AllCops:
+  TargetRubyVersion: 2.6
+  TargetRailsVersion: 6.0
+  Exclude:
+    - 'bin/**/*'
+    - 'db/**/*'
+    - 'db/migrate.rb'
+    - 'db/schema.rb'
+    - 'log/**/*'
+    - 'node_modules/**/*'
+    - 'tmp/**/*'
+    - 'vendor/**/*'
+  CacheRootDirectory: tmp
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+
+# Frozen String Literal
+Style/FrozenStringLiteralComment:
+  Enabled: true
+  Exclude:
+    - 'config.ru'
+    - 'Gemfile'
+    - 'Rakefile'
+    - 'app/views/**/*'
+    - 'config/**/*'
+    - 'db/**/*'
+    - 'lib/tasks/**/*'
+    - 'spec/**/*'
+
+Style/Documentation:
+  Enabled: false
