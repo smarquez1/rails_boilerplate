@@ -29,7 +29,10 @@ module RailsBoilerplate
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
 
-    # Don't generate system test files.
+    # Configure generators
     config.generators.system_tests = nil
+    config.generators.controller_tests = nil
+    config.generators.view_tests = nil
+    config.generators.assets = nil
   end
 end

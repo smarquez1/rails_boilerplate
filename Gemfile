@@ -23,7 +23,7 @@ group :development, :test do
   # gem 'factory_bot_rails'
   gem "pry-byebug"
   gem "pry-rails"
-  # gem 'rspec-rails', '~> 3.5'
+  gem "rspec-rails", "~> 3.8"
 end
 
 group :development do
@@ -40,8 +40,9 @@ end
 
 group :test do
   # gem "bullet", require: false
-  # gem 'capybara'
-  # gem 'chromedriver-helper' # Use webdriver gem
+  gem "capybara"
   # gem 'faker'
   # gem 'formulaic'
+  # gem "webdrivers", "~> 3.0"
+  gem "selenium-webdriver"
 end
