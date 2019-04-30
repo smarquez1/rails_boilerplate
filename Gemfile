@@ -8,7 +8,7 @@ ruby "2.6.0"
 gem "bootsnap", ">= 1.4.1", require: false
 gem "fast_jsonapi"
 gem "puma", "~> 3.11"
-gem "rails", "~> 6.0.0.beta3"
+gem "rails", "~> 6.0.0.rc1"
 gem "sqlite3", "~> 1.3", ">= 1.3.6"
 gem "turbolinks", "~> 5"
 gem "webpacker", ">= 4.0.0.rc.3"
@@ -35,7 +35,7 @@ group :development do
   gem "spring"
   gem "spring-commands-rspec"
   gem "spring-watcher-listen", "~> 2.0.0"
-  gem "web-console", ">= 3.3.0"
+  gem "web-console", ">= 4.0.0"
 end
 
 group :test do
