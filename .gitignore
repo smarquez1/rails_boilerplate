@@ -34,5 +34,11 @@
 yarn-debug.log*
 .yarn-integrity
 
+# Dotenv files
+.env*
+!.env.development
+!.env.local.example
+!.env.test
+
 # Personal todo file
 TODO.txt

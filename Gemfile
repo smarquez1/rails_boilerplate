@@ -21,6 +21,8 @@ gem "webpacker", ">= 4.0.0.rc.3"
 
 group :development, :test do
   # gem 'factory_bot_rails'
+  gem "dotenv-rails"
+  gem "parallel_tests"
   gem "pry-byebug"
   gem "pry-rails"
   gem "rspec-rails", "~> 3.8"
