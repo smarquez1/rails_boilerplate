@@ -12,8 +12,8 @@ describe "PagesController#Show" do
       expect(page).to have_text("Welcome!")
     end
 
-    xit "Displays a welcome message using stimulus", js: true do
-      expect(page).to have_text("This website use stimulus")
+    it "Displays a welcome message using stimulus", js: true do
+      expect(page).to have_text("Hello, Stimulus!")
     end
   end
 end
