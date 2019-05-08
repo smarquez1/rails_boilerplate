@@ -1,9 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>RailsBoilerplate</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+
+    <title>RailsBoilerplate</title>
+
+    <link rel="shortcut icon" href="<%= asset_pack_path 'media/images/icons/favicon.ico' %>">
+    <link rel="manifest" href="/manifest.json">
+
     <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -12,3 +19,4 @@
     <%= yield %>
   </body>
 </html>
+
