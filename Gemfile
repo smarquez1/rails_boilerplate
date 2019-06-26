@@ -43,8 +43,8 @@ end
 group :test do
   gem "bullet", require: false
   gem "capybara"
-  # gem 'faker'
-  # gem 'formulaic'
-  # gem "webdrivers", "~> 3.0"
-  gem "selenium-webdriver"
+  gem "faker"
+  # gem "formulaic"
+  gem "webdrivers", "~> 4.0"
+  gem "webmock"
 end
