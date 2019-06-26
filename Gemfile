@@ -44,7 +44,7 @@ group :test do
   gem "bullet", require: false
   gem "capybara"
   gem "faker"
-  # gem "formulaic"
+  gem "formulaic"
   gem "webdrivers", "~> 4.0"
   gem "webmock"
 end
