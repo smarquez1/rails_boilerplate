@@ -20,8 +20,8 @@ gem "webpacker", ">= 4.0.0.rc.3"
 # gem "pagy"
 
 group :development, :test do
-  # gem 'factory_bot_rails'
   gem "dotenv-rails"
+  gem "factory_bot_rails"
   gem "parallel_tests"
   gem "pry-byebug"
   gem "pry-rails"
@@ -41,7 +41,7 @@ group :development do
 end
 
 group :test do
-  # gem "bullet", require: false
+  gem "bullet", require: false
   gem "capybara"
   # gem 'faker'
   # gem 'formulaic'

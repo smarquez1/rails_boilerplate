@@ -28,9 +28,19 @@ module RailsBoilerplate
     config.load_defaults 6.0
 
     # Configure generators
-    config.generators.system_tests = nil
-    config.generators.controller_tests = nil
-    config.generators.view_tests = nil
-    config.generators.assets = nil
+    config.generators do |g|
+      g.test_framework(
+        :rspec,
+        fixtures: true,
+        controller_specs: false,
+        helper_specs: false,
+        model_specs: true,
+        request_specs: true,
+        routing_specs: true,
+        view_specs: false
+      )
+
+      g.assets false
+    end
   end
 end
