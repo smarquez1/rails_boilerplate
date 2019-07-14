@@ -1,6 +1,7 @@
 import Turbolinks from 'turbolinks'
 import 'lazysizes'
 import 'lazysizes/plugins/parent-fit/ls.parent-fit'
+import '@fortawesome/fontawesome-free/js/all'
 
 // import Rails from 'rails-ujs'
 // import Activestorage from '@rails/activestorage'
