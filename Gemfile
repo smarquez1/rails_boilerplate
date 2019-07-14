@@ -11,11 +11,6 @@ gem "rails", "~> 6.0.0.rc1"
 gem "sqlite3", "~> 1.3", ">= 1.3.6"
 gem "turbolinks", "~> 5"
 gem "webpacker", ">= 4.0.0.rc.3"
-# gem 'redis', '~> 4.0'
-# Use Active Model has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
-# Use Active Storage variant
-# gem 'image_processing', '~> 1.2'
 
 group :development, :test do
   gem "dotenv-rails"
