@@ -6,7 +6,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 gem "bootsnap", ">= 1.4.1", require: false
 gem "fast_jsonapi"
 gem "pagy"
-gem "puma", "~> 3.11"
+gem "puma", "~> 3.12"
 gem "rails", "~> 6.0.0.rc1"
 gem "sqlite3", "~> 1.3", ">= 1.3.6"
 gem "turbolinks", "~> 5"
